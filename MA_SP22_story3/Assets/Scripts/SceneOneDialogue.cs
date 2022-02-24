@@ -53,7 +53,7 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 2){
                ArtChar1.SetActive(true);
                 dialogue.SetActive(true);
-                Char1name.text = "Jeda";
+                Char1name.text = "Luka";
                 Char1speech.text = "Wakey wakey, human.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -66,7 +66,7 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "Jeda";
+                Char1name.text = "Luka";
                 Char1speech.text = "I know I did not hit you that hard.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -79,7 +79,7 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
-                Char1name.text = "Jeda";
+                Char1name.text = "Luka";
                 Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -91,7 +91,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Why do you think I know anything?";
         }
        else if (primeInt == 8){
-                Char1name.text = "Jeda";
+                Char1name.text = "Luka";
                 Char1speech.text = "Do not play the stupid. You will take me to him.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -103,13 +103,13 @@ public void talking(){         // main story function. Players hit next to progr
         }
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
-                Char1name.text = "Jeda";
+                Char1name.text = "Luka";
                 Char1speech.text = "Then you are no use to me, and must be silenced.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 101){
-                Char1name.text = "Jeda";
+                Char1name.text = "Luka";
                 Char1speech.text = "Come back here! Do not think you can hide from me!";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -119,7 +119,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
        else if (primeInt == 200){
-                Char1name.text = "Jeda";
+                Char1name.text = "Luka";
                 Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
                 Char2name.text = "";
                 Char2speech.text = "";
