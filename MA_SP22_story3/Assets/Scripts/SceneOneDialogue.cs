@@ -15,6 +15,8 @@ public class SceneOneDialogue : MonoBehaviour {
         //public Text Char3speech;
         public GameObject dialogue;
         public GameObject ArtChar1;
+		//public GameObject ArtChar1b;
+		//public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -46,7 +48,7 @@ void Update(){         // use spacebar as Next button
 
 //Story Units:
 public void talking(){         // main story function. Players hit next to progress to next int
-        primeInt = primeInt + 1;
+        primeInt += 1;
         if (primeInt == 1){
                 // AudioSource.Play();
         }
@@ -54,7 +56,7 @@ public void talking(){         // main story function. Players hit next to progr
                ArtChar1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "Luka";
-                Char1speech.text = "Wakey wakey, human.";
+                Char1speech.text = "Wakey wakey, human. I got our nose";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -90,7 +92,27 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "You";
                 Char2speech.text = "Why do you think I know anything?";
         }
-       else if (primeInt == 8){
+		
+		 else if (primeInt ==8){
+                Char1name.text = "Luka";
+                Char1speech.text = "My horse has fleas...";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		
+		
+		else if (primeInt ==9){
+                Char1name.text = "Luka";
+                Char1speech.text = "... Have you any detergent";
+                Char2name.text = "";
+                Char2speech.text = "";
+				//primeInt = 19;
+        }
+		
+		
+		
+		
+       else if (primeInt == 10){
                 Char1name.text = "Luka";
                 Char1speech.text = "Do not play the stupid. You will take me to him.";
                 Char2name.text = "";
@@ -101,6 +123,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
         }
+		
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
                 Char1name.text = "Luka";
@@ -133,7 +156,9 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
         }
-     }
+	}
+	 
+	 
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
