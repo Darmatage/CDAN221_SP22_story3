@@ -26,6 +26,8 @@ public class Scene4CDialogue : MonoBehaviour {
         public GameObject Choice1b;
 		public GameObject Choice1c;
 		public GameObject Choice1d;
+		public GameObject Choice1e;
+		public GameObject Choice1f;
         public GameObject NextScene1Button;
         public GameObject nextButton;
 		public string playerName;
@@ -48,6 +50,8 @@ void Start(){         // initial visibility settings
         Choice1b.SetActive(false);
 		Choice1c.SetActive(false);
 		Choice1d.SetActive(false);
+		Choice1e.SetActive(false);
+		Choice1f.SetActive(false);
         NextScene1Button.SetActive(false);
         nextButton.SetActive(true);
 		string pNameTemp = gameHandler.GetName();
@@ -88,7 +92,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
-                Char2speech.text = "You enter the classroom, eyes glancing your way. As you take a seat at your desk, there is a bouquet of flowers.";
+                Char2speech.text = "You enter the classroom, eyes glancing your way. As you take a seat at your desk, there is a small bouquet of sunflowers.";
         }
        else if (primeInt == 101){
 				Choice1c.SetActive(true); // function Choice1aFunct()
@@ -112,12 +116,12 @@ public void talking(){         // main story function. Players hit next to progr
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
-                Char2speech.text = "To your right, Rei already has their book out on the page. Their posture is rigid and their desk space organized.";
+                Char2speech.text = "To your left, You see Luka bouncing their leg in excitement. You briefly lock eyes, making them beam.";
         }
 		else if (primeInt == 203){
 				ArtCharB2.SetActive(true);
 				Char1name.text = "Mrs. Kane";
-				Char1speech.text = "Rei, could you give a recap of yesterday's lecture?";
+				Char1speech.text = "Luka, could you answer question number 4?";
 				Char2name.text = "";
 				Char2speech.text = "";
 		}
@@ -126,31 +130,47 @@ public void talking(){         // main story function. Players hit next to progr
 				ArtChar2.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Rei";
-				Char2speech.text = "Of course.";
+                Char2name.text = "";
+				Char2speech.text = "Luka nods excitedly, jumping onto their feet.";
         }
 		else if (primeInt == 205){
-				ArtChar2.SetActive(false);
-				ArtChar1.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-				Char2speech.text = "They stands up, with a straight posture, as they take a deep breath. With a perfect memory, they recount every little detail that the teacher had gone over the day prior.";
+                Char2name.text = "Luka";
+				Char2speech.text = "The mitochondria is the powerhouse of the cell!";
         }
 		else if (primeInt == 206){
-				ArtChar1.SetActive(false);
+				ArtChar2.SetActive(false);
 				ArtCharB2.SetActive(true);
 				Char1name.text = "Mrs. Kane";
-                Char1speech.text = "Thank you Rei. On point as usual.";
+                Char1speech.text = "Excellent work, Luka.";
                 Char2name.text = "";
 				Char2speech.text = "";
 		}
 	else if (primeInt == 207){
 				ArtCharB2.SetActive(false);
 				Char1name.text = "";
-				Char1speech.text = "After class...";
-				primeInt = 299;
+				Char1speech.text = "Luka cheers to themself before sitting back down. They lean over.";
 	}
+		else if (primeInt == 208){
+				ArtChar2.SetActive(true);
+				Char1name.text = "Luka";
+                Char1speech.text = "Did you see that, " + playerName + "? I got the question right!";
+                Char2name.text = "";
+				Char2speech.text = "";
+		}
+		
+		else if (primeInt == 209){
+				Choice1e.SetActive(true); // function Choice1aFunct()
+                Choice1f.SetActive(true); // function Choice1bFunct()
+		}
+		
+		else if (primeInt == 209){
+				Choice1e.SetActive(true); // function Choice1aFunct()
+                Choice1f.SetActive(true); // function Choice1bFunct()
+		}
+
+		
 		
 		//if (gameHandler.CheckPlayerStat() <= 1){
                //      primeInt = 299;
@@ -163,47 +183,45 @@ public void talking(){         // main story function. Players hit next to progr
 		//}
 		 
 		 else if (primeInt == 300){
-				ArtCharB3.SetActive(false);
-				ArtChar3.SetActive(false);
+				ArtChar2.SetActive(false);
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
-				Char2speech.text = "You feel a hand on your shoulder.";
+				Char2speech.text = "After class, Luka gives you a grin as they pull you into a hug.";
 }
 		else if (primeInt == 301){
-				ArtChar3.SetActive(false);
-				ArtChar1.SetActive(true);
+				ArtChar2.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Rei";
-				Char2speech.text = "It looks perfect on you, just as I had thought.";
+                Char2name.text = "Luka";
+				Char2speech.text = "Look at you! It looks so pretty! I hope you like it! I spent all night on it!";
 		}
 		
 		else if (primeInt == 302){
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
-				Char2speech.text = "Yeah! Thank you. It must have cost you a fortune to get this.";
+				Char2speech.text = "Thanks a bunch. It looks really good! Reminds me of the one you made for me years ago.";
 		}
 		else if (primeInt == 303){
 				ArtChar1.SetActive(false);
 				ArtChar2.SetActive(true);
-				Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Rei";
-				Char2speech.text = "Price point means nothing in the pursuit of the absolute. Just as long as you stay by my side, there is no need to worry your little head off.";
+				Char1name.text = "Luka";
+                Char1speech.text = "Of course! I modeled it after it! You still have the old one, right? RIGHT?";
+                Char2name.text = "";
+				Char2speech.text = "";
 		}
 		else if (primeInt == 304){
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
-				Char2speech.text = "Are you sure?";
+				Char2speech.text = "Yeah! Of course I kept it.";
 		}
 		else if (primeInt == 305){
 				ArtChar2.SetActive(false);
 				ArtChar1.SetActive(true);
-				Char1name.text = "Rei";
-                Char1speech.text = "Of course, I wouldn't waste my time with lies or flattery. It's rather unbecoming of one to do so.";
+				Char1name.text = "Luka";
+                Char1speech.text = "Then you can have one on each wrist! We always be together!";
                 Char2name.text = "";
 				Char2speech.text = "";
 		}
@@ -211,20 +229,28 @@ public void talking(){         // main story function. Players hit next to progr
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
-				Char2speech.text = "...okay...?";
+				Char2speech.text = "Sure sure.";
 		}
 		else if (primeInt == 307){
-				Char1name.text = "Rei";
-                Char1speech.text = "Let us be off. There is much to be done.";
+			ArtChar2.SetActive(true);
+				ArtChar1.SetActive(false);
+				Char1name.text = "Luka";
+                Char1speech.text = "Come on! The sun's still out, let's hang out like we used to!";
                 Char2name.text = "";
 				Char2speech.text = "";
 		}
-		else if (primeInt == 308) {
+		else if (primeInt == 308){
+				ArtChar2.SetActive(true);
+				Char1name.text = "";
+                Char1speech.text = "Luka continues to smile before taking your hand as they lead you out the classroom.";
+                Char2name.text = "";
+				Char2speech.text = "";
+		}
+		else if (primeInt == 309) {
 			nextButton.SetActive(false);
                 allowSpace = false;
 				NextScene1Button.SetActive(true);
 		}
-		
 		
 }
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
@@ -276,6 +302,30 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = true;
 				gameHandler.UpdatePlayerStat(1);
         }
+		public void Choice1eFunct(){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "You give him a shrug.";
+                primeInt = 299;
+                Choice1e.SetActive(false);
+                Choice1f.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+				gameHandler.UpdatePlayerStat(-1);
+        }
+		public void Choice1fFunct(){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Good job, Luka! That was awesome!";
+                primeInt = 299;
+                Choice1e.SetActive(false);
+                Choice1f.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+				gameHandler.UpdatePlayerStat(1);
+		}
 
         public void SceneChange1(){
                SceneManager.LoadScene("Scene5c");
