@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene5ADialogue : MonoBehaviour {
+public class Scene5BDialogue : MonoBehaviour {
         public int primeInt = 1;         // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
@@ -82,7 +82,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
-                Char2speech.text = "You decide to stick around, waiting for Reyes to finish their detention sentence. Afterwards, you're led all the way to a clothing store.";
+                Char2speech.text = "Rei takes your hand and takes you to a familiar boutique.";
 		 }
 		 	else if (primeInt == 3){
 				Char1name.text = "";
@@ -113,7 +113,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
-                Char2speech.text = "You feel the grip on your shoulder tighten. You glance back at Reyes.";
+                Char2speech.text = "You hear a scoff from behind you.";
 		 }
 		 		 else if (primeInt == 8){
 					 ArtCharB2.SetActive(false);
@@ -124,34 +124,30 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
 		 }
 		 		 else if (primeInt == 9){
+					  ArtCharB1.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
-                Char2speech.text = "Just as you're about to respond, Reyes speaks first.";
+                Char2speech.text = "Just as you're about to talk, Rei responds.";
 		 }
 		 		 else if (primeInt == 10){
-					 ArtCharB1.SetActive(false);
 					 ArtChar3.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Reyes";
-                Char2speech.text = "Yeah, what's it to you?";
+                Char2name.text = "Rei";
+                Char2speech.text = "I'm sorry, we don't have time for this. Now if you'll excuse us.";
 		 }
-		 		 else if (primeInt == 11){
-					 ArtCharB1.SetActive(true);
-					 ArtChar3.SetActive(false);
-                Char1name.text = "Lila";
-                Char1speech.text = "Nothing nothing. I just wanted to know who was clinging onto my bestie like a lost puppy.";
-                Char2name.text = "";
-                Char2speech.text = "";
+		 		 else if (primeInt == 11){;
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Rei! Be nice! This is my best friend, Lila, from my old school.";
 		 }
 		 		 else if (primeInt == 12){
-					 ArtCharB1.SetActive(false);
-					 ArtChar3.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Reyes";
-                Char2speech.text = "...";
+                Char2name.text = "Rei";
+                Char2speech.text = "I'm sorry, did I stutter? I said, we don't have time. We're on a tight schedule and clearly your 'friend' here isn't a part of it.";
 		 }
 		 		 else if (primeInt == 13){
 					 ArtChar3.SetActive(false);
@@ -167,36 +163,42 @@ public void talking(){         // main story function. Players hit next to progr
 		
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
-			ArtCharB3.SetActive(true);
-                Char1name.text = "Lila";
-                Char1speech.text = "I was just kidding, no need to take it so seriously.";
+			ArtChar3.SetActive(true);
+                Char1name.text = "Rei";
+                Char1speech.text = "Very well. I will allow you five minutes. Nothing more.";
                 Char2name.text = "";
                 Char2speech.text = "";
-				primeInt = 899;
         }
-				 else if (primeInt == 900){
-				ArtCharB3.SetActive(false);
-				ArtCharB2.SetActive(true);
+				 else if (primeInt == 101){;
+				 ArtChar3.SetActive(false);
+				ArtCharB3.SetActive(true);
                 Char1name.text = "Lila";
-                Char1speech.text = "Anyway, got a date to the homecoming yet? I heard your school goes hard!";
+                Char1speech.text = "Yeesh, what a buzz kill.";
                 Char2name.text = "";
                 Char2speech.text = "";
-				primeInt = 100;
 		 }
-		else if (primeInt == 101){
+				else if (primeInt == 102) {
+					ArtCharB2.SetActive(true);
+					ArtCharB3.SetActive(false);
+					Char1name.text = "Lila";
+					Char1speech.text = "Anyway, got any ideas for your date to the homecoming? Heard your school goes hard on it every year.";
+					Char2name.text = "";
+					Char2speech.text = "";
+				}
+		else if (primeInt == 103){
 			Choice1c.SetActive(true); // function Choice1aFunct()
             Choice1d.SetActive(true); // function Choice1bFunct()
 		}
 
 		 else if (primeInt == 200){
 			 ArtCharB1.SetActive(false);
-			 ArtCharB2.SetActive(true);
-			 ArtCharB3.SetActive(false);
+			 ArtCharB2.SetActive(false);
+			 ArtCharB3.SetActive(true);
                 Char1name.text = "Lila";
-                Char1speech.text = "Haha! You still got it!";
+                Char1speech.text = "Yeah dude. They're not some robot that's going to listen to your every command.";
                 Char2name.text = "";
                 Char2speech.text = "";
-				primeInt = 899;
+				primeInt = 101;
 		 }
 
 		else if (primeInt == 300){
@@ -211,51 +213,51 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
-                Char2speech.text = "Tell me about it. But I'm not a complete goody-two shoes! I'm technically skipping out on assignments as we speak!";
+                Char2speech.text = "Tell me about it. I've been a bit busy lately to cause too much havoc.";
 		 }
 				 else if (primeInt == 302){
-                Char1name.text = "Lila";
-                Char1speech.text = "Ooh, you're so bad.";
+                Char1name.text = "";
+                Char1speech.text = "Your eyes quickly point towards Rei before you resume your conversation.";
                 Char2name.text = "";
                 Char2speech.text = "";
 		 }
 		 		 else if (primeInt == 303){
                 Char1name.text = "Lila";
-                Char1speech.text = "I'd love to stay longer and chat but I gotta dash. Got places to be, things to wreck. You remember how it is!";
+                Char1speech.text = "I gotcha. No need to worry about that. I'm sure you'll find one way or another.";
                 Char2name.text = "";
                 Char2speech.text = "";
 		 }
 		 		 else if (primeInt == 304){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = playerName;
-                Char2speech.text = "Couldn't forget even if I tried.";
+                Char2name.text = "";
+                Char2speech.text = "You flash Lila a quick smile with a devious look.";
 		 }
 		 		 else if (primeInt == 305){
 					 ArtCharB2.SetActive(false);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "You wave goodbye as Lila walks off into the distance.";
-		 }
-		 		 else if (primeInt == 306){
-				ArtChar1.SetActive(true);
-                Char1name.text = "Reyes";
-                Char1speech.text = "...";
+					 ArtCharB1.SetActive(true);
+                Char1name.text = "Lila";
+                Char1speech.text = "Well, gotta dash! You know how things are, never enough time in the day for all the plans I got.";
                 Char2name.text = "";
                 Char2speech.text = "";
 		 }
-		 		 else if (primeInt == 307){
+		 		 else if (primeInt == 306){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
-                Char2speech.text = "I'm sorry about her. She's always been a bit of a nut case. No filter at all.";
+                Char2speech.text = "Couldn't even if I tried! See ya around!";
+		 }
+		 		 else if (primeInt == 307){
+					 ArtCharB1.SetActive(false);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "I'm sorry about her.";
 		 }
 		 		 else if (primeInt == 308){
-					 ArtChar1.SetActive(false);
 					 ArtChar3.SetActive(true);
-                Char1name.text = "Reyes";
-                Char1speech.text = "...Do I really cling onto you?";
+                Char1name.text = "Rei";
+                Char1speech.text = "Was what they said true? That you used to cause mayhem for those around you?";
                 Char2name.text = "";
                 Char2speech.text = "";
 		 }
@@ -266,6 +268,7 @@ public void talking(){         // main story function. Players hit next to progr
 				 
 				 
 				 else if (primeInt == 400){
+					 ArtCharB2.SetActive(false);
 					 ArtCharB1.SetActive(true);
                 Char1name.text = "Lila";
                 Char1speech.text = "Oh, that's too sad then. Hey. Worst case scenario, you can be my date. Run it back just like we did last year!";
@@ -275,14 +278,20 @@ public void talking(){         // main story function. Players hit next to progr
 		 		 else if (primeInt == 401){
                 Char1name.text = "";
                 Char1speech.text = "";
+				Char2name.text = "";
+                Char2speech.text = "You hear a scoff from Rei. Your shrug it off.";
+		 }
+				else if (primeInt == 402){
+					Char1name.text = "";
+					Char1speech.text = "";
                 Char2name.text = playerName;
                 Char2speech.text = "You know it! Anyway, how're things back in Ravendale?";
 				primeInt = 299;
-		 }
+				}
 				 else if (primeInt == 500){
 					 ArtChar3.SetActive(true);
-                Char1name.text = "Reyes";
-                Char1speech.text = "...";
+                Char1name.text = "Rei";
+                Char1speech.text = "Is that so...";
                 Char2name.text = "";
                 Char2speech.text = "";
 		 }
@@ -290,9 +299,15 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
-                Char2speech.text = "Without another word, Reyes leaves.";
+                Char2speech.text = "Rei grabs your wrist once more as they drag you inside the store.";
 		 }
-		 else if (primeInt == 502){
+				else if (primeInt == 502){
+					Char1name.text = "";
+					Char1speech.text = "";
+					Char2name.text = "Rei";
+					Char2speech.text = "Well, we mustn't dally. You've far exceeded the time I so graciously gave you.";
+				}
+		 else if (primeInt == 503){
 				nextButton.SetActive(false);
                 allowSpace = false;
 				NextScene1Button.SetActive(true);
@@ -301,9 +316,9 @@ public void talking(){         // main story function. Players hit next to progr
 		 
 		 		 else if (primeInt == 600){
 					 ArtChar3.SetActive(false);
-					 ArtChar2.SetActive(true);
-                Char1name.text = "Reyes";
-                Char1speech.text = "Heh, right. Just stupid stuff that stupid people say.";
+					 ArtChar1.SetActive(true);
+                Char1name.text = "Rei";
+                Char1speech.text = "If that's the case, I don't possibly understand why you tolerate them. It seems like they're a waste of space that shouldn't be given the time of day.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				}
@@ -312,9 +327,24 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
-                Char2speech.text = "See? You get it. C'mon. Let's go.";
+                Char2speech.text = "Haha... yeah.";
 		 }
-		 		 else if (primeInt == 602){
+			else if (primeInt == 602){
+				ArtChar1.SetActive(false);
+				ArtChar2.SetActive(true);
+				Char1name.text = "";
+				Char1speech.text = "";
+				Char2name.text = "";
+				Char2speech.text = "Rei laughs before offering you their arm to take to lead you inside.";
+			}
+			
+			else if (primeInt == 603){
+				Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Rei";
+                Char2speech.text = "Now, let us be off.";
+			}
+		 		 else if (primeInt == 604){
 			nextButton.SetActive(false);
                 allowSpace = false;
 				NextScene1Button.SetActive(true);
@@ -339,7 +369,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
-                Char2speech.text = "Hey, Lila. Cut it out. Reyes is a good friend of mine. It's rude to talk to someone like that.";
+                Char2speech.text = "Just give me a few more minutes to talk. Then we can do whatever you have on that schedule of yours, okay?";
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -351,7 +381,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
-                Char2speech.text = "I know right? I mean, he's not that bad I guess. Good to have around.";
+                Char2speech.text = "Buzz off, man. She's my friend. I can do whatever I want.";
                 primeInt = 199;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -387,7 +417,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
-                Char2speech.text = "Gotta be a little honest, you do follow me around everywhere. But I also do it to you so it's mutual!";
+                Char2speech.text = "Just a little bit. Nothing too serious, just some graffiti here and there.";
                 primeInt = 499;
                 Choice1e.SetActive(false);
                 Choice1f.SetActive(false);
@@ -399,7 +429,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
-                Char2speech.text = "Don't listen to what she said, really. She's always read people wrong in the past.";
+                Char2speech.text = "Nah, I wouldn't listen to a word they said. They were the class clown and still looks like they're keeping that reputation up!";
                 primeInt = 599;
                 Choice1e.SetActive(false);
                 Choice1f.SetActive(false);
@@ -409,6 +439,6 @@ public void talking(){         // main story function. Players hit next to progr
 		}
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene6A");
+               SceneManager.LoadScene("Scene6B");
         }
 }
