@@ -17,7 +17,9 @@ public class Scene4ADialogue : MonoBehaviour {
         public GameObject ArtChar1;
 		public GameObject ArtChar2;
 		public GameObject ArtChar3;
-		public GameObject ArtCharB;
+		public GameObject ArtCharB1;
+		public GameObject ArtCharB2;
+		public GameObject ArtCharB3;
         public GameObject ArtBG1;
 		public GameObject ArtBG2;
         public GameObject Choice1a;
@@ -37,7 +39,9 @@ void Start(){         // initial visibility settings
         ArtChar1.SetActive(false);
 		ArtChar2.SetActive(false);
 		ArtChar3.SetActive(false);
-		ArtCharB.SetActive(false);
+		ArtCharB1.SetActive(false);
+		ArtCharB2.SetActive(false);
+		ArtCharB3.SetActive(false);
         ArtBG1.SetActive(true);
 		ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
@@ -97,30 +101,30 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "The bell rings. The teacher steps in and begins her lesson.";
         }
 		else if (primeInt == 201){
-				ArtCharB.SetActive(true);
+				ArtCharB1.SetActive(true);
 				Char1name.text = "Mrs. Kane";
 				Char1speech.text = "Alright class. Please turn to page 25 of your textbook.";
 				Char2name.text = "";
 				Char2speech.text = "";
 		}
 		else if (primeInt == 202){
-				ArtCharB.SetActive(false);
+				ArtCharB1.SetActive(false);
 				ArtChar3.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
-                Char2speech.text = "As everyone shuffles to get your books out, the door slides open. Reyes was there with a frown.";
+                Char2speech.text = "As everyone shuffles to get their books out, the door slides open. Reyes was there with a frown.";
         }
 		else if (primeInt == 203){
-				ArtCharB.SetActive(true);
+				ArtCharB3.SetActive(true);
 				ArtChar3.SetActive(false);
 				Char1name.text = "Mrs. Kane";
-				Char1speech.text = "Grateful to have you join us, Reyes. Now take your seat and get today's lesson out.";
+				Char1speech.text = "Grateful to have you join us today, Reyes. Now take your seat and get today's lesson out.";
 				Char2name.text = "";
 				Char2speech.text = "";
 		}
 		else if (primeInt == 204){
-				ArtCharB.SetActive(false);
+				ArtCharB3.SetActive(false);
 				ArtChar3.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
@@ -128,7 +132,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char2speech.text = "Tsk.";
         }
 		else if (primeInt == 205){
-				ArtCharB.SetActive(false);
+				ArtCharB3.SetActive(false);
 				ArtChar3.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
@@ -137,7 +141,7 @@ public void talking(){         // main story function. Players hit next to progr
 				primeInt = 299;
         }
 		
-		 //if (gameHandler.CheckPlayerStat() <= 1){
+		//if (gameHandler.CheckPlayerStat() <= 1){
                //      primeInt = 299;
 		 //}			 
 		//else if (primeInt == 206){
@@ -148,8 +152,8 @@ public void talking(){         // main story function. Players hit next to progr
 		//}
 		 
 		 else if (primeInt == 300){
-				ArtCharB.SetActive(false);
-				ArtChar3.SetActive(true);
+				ArtCharB3.SetActive(false);
+				ArtChar3.SetActive(false);
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -185,7 +189,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char2speech.text = "Before you could question him, Mrs. Kane clears her throat loudly.";
 		}
 		else if (primeInt == 305){
-				ArtCharB.SetActive(true);
+				ArtCharB3.SetActive(true);
 				ArtChar2.SetActive(false);
 				Char1name.text = "Mrs. Kane";
                 Char1speech.text = "Mister Reyes. Did you have something to say to the class? Maybe answering our question here?";
@@ -193,7 +197,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char2speech.text = "";
 		}
 		else if (primeInt == 306){
-				ArtCharB.SetActive(false);
+				ArtCharB3.SetActive(false);
 				ArtChar1.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
@@ -201,7 +205,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char2speech.text = "...";
 		}
 		else if (primeInt == 307){
-				ArtCharB.SetActive(true);
+				ArtCharB1.SetActive(true);
 				ArtChar1.SetActive(false);
 				Char1name.text = "Mrs. Kane";
                 Char1speech.text = "That's what I thought. Detention service after school.";
@@ -209,7 +213,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char2speech.text = "";
 		}
 		else if (primeInt == 308){
-				ArtCharB.SetActive(false);
+				ArtCharB1.SetActive(false);
 				ArtChar3.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
