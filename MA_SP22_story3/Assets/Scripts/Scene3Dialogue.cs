@@ -14,6 +14,9 @@ public class Scene3Dialogue : MonoBehaviour {
        //public Text Char3name;
        //public Text Char3speech;
         public GameObject DialogueDisplay;
+		public GameObject Gift1;
+		public GameObject Gift2;
+		public GameObject Gift3;
         //public GameObject ArtChar1;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
@@ -38,6 +41,9 @@ void Start(){         // initial visibility settings
 		playerName = pNameTemp.ToUpper();
         DialogueDisplay.SetActive(false);
         //ArtChar1.SetActive(false);
+		Gift1.SetActive(false);
+		Gift2.SetActive(false);
+		Gift3.SetActive(false);
         ArtBG1.SetActive(true);
 		ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
@@ -137,8 +143,9 @@ public void talking(){         // main story function. Players hit next to progr
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
+				Gift1.SetActive(true);
                 Char1name.text = "";
-                Char1speech.text = "You open the first box, finding a pair of earbuds. Somehow, the design looks familiar to you.";
+                Char1speech.text = "You open the first box, finding an earring. Somehow, the design looks familiar to you.";
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -147,6 +154,7 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+				Gift2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "You open the second box and find a necklace with a lock and key charm attached. It looks to be made of gold with a diamond in the middle.";
                 primeInt = 199;
@@ -157,6 +165,7 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = true;
         }
 		public void Choice1cFunct(){
+				Gift3.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "The third box contained a bracelet with a heart charm. It looks handmade.";
                 primeInt = 299;

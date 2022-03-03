@@ -9,7 +9,7 @@ using UnityEngine.Audio;
 public class GameHandler : MonoBehaviour{
 		public static string playerName = "YOU";
         public static int playerStat;
-        //public GameObject textGameObject;
+        public GameObject textGameObject;
 
         //void Start () { UpdateScore (); }
 

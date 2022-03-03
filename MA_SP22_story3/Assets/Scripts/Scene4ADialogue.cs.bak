@@ -88,7 +88,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
-                Char2speech.text = "You enter the classroom, eyes glancing your way. As you take a seat at your desk, there is a bouquet of flowers.";
+                Char2speech.text = "You enter the classroom, eyes glancing your way. As you take a seat at your desk, there is a single wilted rose.";
         }
        else if (primeInt == 101){
 				Choice1c.SetActive(true); // function Choice1aFunct()
@@ -213,7 +213,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char2speech.text = "";
 		}
 		else if (primeInt == 308){
-				ArtCharB1.SetActive(false);
+				ArtCharB2.SetActive(false);
 				ArtChar3.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
@@ -257,7 +257,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
-                Char2speech.text = "You bring the flowers and put it into the trash.";
+                Char2speech.text = "You bring the flower and put it into the trash.";
                 primeInt = 199;
                 Choice1c.SetActive(false);
                 Choice1d.SetActive(false);
@@ -269,7 +269,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
-                Char2speech.text = "You take the bouquet and give it a smell. It smells lovely.";
+                Char2speech.text = "You take the flower and give it a smell. Although it's faint, it gives a gentle aroma.";
                 primeInt = 199;
                 Choice1c.SetActive(false);
                 Choice1d.SetActive(false);

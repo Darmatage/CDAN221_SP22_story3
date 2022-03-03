@@ -20,6 +20,7 @@ public class Scene2ADialogue : MonoBehaviour {
 		public GameObject ArtChar2;
 		public GameObject ArtChar3;
         public GameObject ArtBG1;
+		public GameObject ArtBG2;
         public GameObject Choice1a;
         public GameObject Choice1b;
 		public GameObject Choice1c;
@@ -39,6 +40,7 @@ void Start(){         // initial visibility settings
 		ArtChar2.SetActive(false);
 		ArtChar3.SetActive(false);
         ArtBG1.SetActive(true);
+		ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
 		Choice1c.SetActive(false);
@@ -62,15 +64,26 @@ public void talking(){         // main story function. Players hit next to progr
         if (primeInt == 1){
                  //AudioSource.Play();
         }
-        else if (primeInt == 2){
+		else if (primeInt == 2){
+			DialogueDisplay.SetActive(true);
+			ArtBG2.SetActive(true);
+			ArtBG1.SetActive(false);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "In the corner of your eye, you see a figure leaning on the wall near the window. You lock eyes for a moment. Curiosity gets the better of you and you approach them.";
+		}
+        else if (primeInt == 3){
+			DialogueDisplay.SetActive(true);
                ArtChar1.SetActive(true);
-                DialogueDisplay.SetActive(true);
-                Char1name.text = "Reyes";
+                ArtBG2.SetActive(false);
+				ArtBG1.SetActive(true);
+                Char1name.text = "???";
                 Char1speech.text = "Huh, so you decided to skip too? It’s a waste of time anyway so you made a good decision I guess.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt ==3){
+       else if (primeInt ==4){
                 Char1name.text = "";
                 Char1speech.text = "";
 				Char2name.text = playerName;
@@ -82,13 +95,13 @@ public void talking(){         // main story function. Players hit next to progr
         
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "What’s the point in going when there’s nothing lined up for me?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 101){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "It’s not like it’d amount to anything. It’s a waste of time for someone like me.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -100,7 +113,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "What do you mean “For someone like you”?";
         }
 		else if (primeInt == 103){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "Take a good look at me. Is there anything that seems different about me compared to the other students?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -116,7 +129,7 @@ public void talking(){         // main story function. Players hit next to progr
 		else if (primeInt == 155){
 			ArtChar3.SetActive(true);
 			ArtChar1.SetActive(false);
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "Tch, you blind or something? How does my hair even- You know what, forget it. I’ll just tell you. I’ve been held back a few years…";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -126,7 +139,8 @@ public void talking(){         // main story function. Players hit next to progr
 		else if (primeInt == 160){
 			ArtChar2.SetActive(true);
 			ArtChar3.SetActive(false);
-                Char1name.text = "Reyes";
+			ArtChar1.SetActive(false);
+                Char1name.text = "???";
                 Char1speech.text = "Heh, keen eyes you got there. Yup, you figured me out, I’m older than most students. I’ve been held back a few years but it’s whatever.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -141,7 +155,7 @@ public void talking(){         // main story function. Players hit next to progr
 			ArtChar1.SetActive(true);
 			ArtChar2.SetActive(false);
 			ArtChar3.SetActive(false);
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "Wouldn’t you like to know, looking for something to laugh at huh?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -153,7 +167,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Yeesh, I was curious. Fine, don’t tell me.";
 		}
 else if (primeInt == 164){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -161,7 +175,7 @@ else if (primeInt == 164){
 else if (primeInt == 165){
 			ArtChar3.SetActive(true);
 			ArtChar1.SetActive(false);
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "...bio.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -173,7 +187,7 @@ else if (primeInt == 166){
                 Char2speech.text = "Bio?";
 		}
 else if (primeInt == 167){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "As in, Biology yes. All because I can never remember that thing that gives cells power ups or something.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -185,14 +199,14 @@ else if (primeInt == 168){
                 Char2speech.text = "You mean the Mitochondria? The powerhouse of the cell?";
 		}
 else if (primeInt == 169){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "That, whatever it is. It’s just so stupid. Why would I need to know that anyway? School’s a joke.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				primeInt =184;
 		}
 		else if (primeInt == 185){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "All these sheep here can’t even see it for what it is, all just chasing Grades. As if those ever mean anything.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -207,7 +221,7 @@ else if (primeInt == 170){
 else if (primeInt == 171){
 				ArtChar2.SetActive(true);
 				ArtChar3.SetActive(false);
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "Yeah? You know, no one’s ever really… understood my perspective before. It’s actually kind of weird.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -225,7 +239,7 @@ else if (primeInt == 173){
                 Char2speech.text = "They teach us a bunch of crud you’ll never use in your life, and make us wake up early to learn said crud as they wave a grade in our face for us to get.";
 		}
 else if (primeInt == 174){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "Heh, maybe you really do get it. There’s nothing for us here, that much is clear. Knowing that doesn’t make me any less of a failure though.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -251,7 +265,7 @@ else if (primeInt == 177){
 else if (primeInt == 178){
 				ArtChar1.SetActive(true);
 				ArtChar2.SetActive(false);
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "…! I… Ehem- Maybe you’re not completely wrong I guess.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -265,20 +279,20 @@ else if (primeInt == 179){
 else if (primeInt == 180){
 				ArtChar2.SetActive(true);
 				ArtChar1.SetActive(false);
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "Hehe, yeah I guess so. I don’t care what they’re feeling though, as long as I’m content is what matters. I look out for me, everyone is whatever…";
                 Char2name.text = "";
                 Char2speech.text = "";
 }
 else if (primeInt == 181){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "But you know, this has been strangely… not bad hanging with you. ";
                 Char2name.text = "";
                 Char2speech.text = "";
 				primeInt = 181;
 }
 else if (primeInt == 185){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "I would have been alright out here on my own, you being here wouldn’t make a difference or anything so it’s whatever.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -317,7 +331,7 @@ else if (primeInt == 187){
        else if (primeInt == 200){
 				ArtChar3.SetActive(true);
 				ArtChar1.SetActive(false);
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "Are you deaf? Aren't you going to answer my question?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -329,7 +343,7 @@ else if (primeInt == 187){
                 Char2speech.text = "Sorry! You just surprised me.";
 	   }
 	   else if (primeInt == 202){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "Tsk. What a waste of time school is. Espcially for someone like me.";
                 Char2name.text = "";
                 Char2speech.text = "";

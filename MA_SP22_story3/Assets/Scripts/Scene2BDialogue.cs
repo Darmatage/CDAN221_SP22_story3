@@ -20,6 +20,7 @@ public class Scene2BDialogue : MonoBehaviour {
 		public GameObject ArtChar2;
 		public GameObject ArtChar3;
         public GameObject ArtBG1;
+		public GameObject ArtBG2;
         public GameObject Choice1a;
         public GameObject Choice1b;
 		//public GameObject Choice1c;
@@ -39,6 +40,7 @@ void Start(){         // initial visibility settings
 		ArtChar2.SetActive(false);
 		ArtChar3.SetActive(false);
         ArtBG1.SetActive(true);
+		ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
 		//Choice1c.SetActive(false);
@@ -156,6 +158,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "I guess we're doing this.";
 		}
 		else if (primeInt == 112){
+			ArtChar1.SetActive(false);
+			ArtBG2.SetActive(true);
                 Char1name.text = "Rei";
                 Char1speech.text = "Here, try some of these. I’ve had them prepared and made fresh for peak delectable enjoyment.";
                 Char2name.text = "";
@@ -168,8 +172,6 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Wow, this is incredible.";
 }
 		else if (primeInt == 114){
-				ArtChar1.SetActive(false);
-				ArtChar2.SetActive(true);
                 Char1name.text = "Rei";
                 Char1speech.text = "Well of course, I’ve had these tarts especially prepared for absolute perfection.";
                 Char2name.text = "";
@@ -182,14 +184,14 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
 }
 		else if (primeInt == 116){
+				ArtBG2.SetActive(false);
+				ArtChar1.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
                 Char2speech.text = "I… I actually do, I don’t know how I can ever go back to eating donuts again after this.";
 }
 		else if (primeInt == 117){
-				ArtChar1.SetActive(true);
-				ArtChar2.SetActive(false);
                 Char1name.text = "Rei";
                 Char1speech.text = "My name is Rei, and today is the last time you live like some casual barbarian. Listen to exactly what I say and do exactly what I tell you and you might just be perfect.";
                 Char2name.text = "";

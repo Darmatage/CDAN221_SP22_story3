@@ -20,6 +20,7 @@ public class Scene2ADialogue : MonoBehaviour {
 		public GameObject ArtChar2;
 		public GameObject ArtChar3;
         public GameObject ArtBG1;
+		public GameObject ArtBG2;
         public GameObject Choice1a;
         public GameObject Choice1b;
 		public GameObject Choice1c;
@@ -39,6 +40,7 @@ void Start(){         // initial visibility settings
 		ArtChar2.SetActive(false);
 		ArtChar3.SetActive(false);
         ArtBG1.SetActive(true);
+		ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
 		Choice1c.SetActive(false);
@@ -62,15 +64,23 @@ public void talking(){         // main story function. Players hit next to progr
         if (primeInt == 1){
                  //AudioSource.Play();
         }
-        else if (primeInt == 2){
-               ArtChar1.SetActive(true);
-                DialogueDisplay.SetActive(true);
+		else if (primeInt == 2){
+			DialogueDisplay.SetActive(true);
+			ArtBG2.SetActive(true);
+			ArtBG1.SetActive(false);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "In the corner of your eye, you see a figure leaning on the wall near the window. You lock eyes for a moment. Curiosity gets the better of you and you approach them.";
+		}
+        else if (primeInt == 3){
+			DialogueDisplay.SetActive(true);
                 Char1name.text = "???";
                 Char1speech.text = "Huh, so you decided to skip too? It’s a waste of time anyway so you made a good decision I guess.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt ==3){
+       else if (primeInt ==4){
                 Char1name.text = "";
                 Char1speech.text = "";
 				Char2name.text = playerName;
@@ -82,7 +92,7 @@ public void talking(){         // main story function. Players hit next to progr
         
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "What’s the point in going when there’s nothing lined up for me?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -126,6 +136,7 @@ public void talking(){         // main story function. Players hit next to progr
 		else if (primeInt == 160){
 			ArtChar2.SetActive(true);
 			ArtChar3.SetActive(false);
+			ArtChar1.SetActive(false);
                 Char1name.text = "???";
                 Char1speech.text = "Heh, keen eyes you got there. Yup, you figured me out, I’m older than most students. I’ve been held back a few years but it’s whatever.";
                 Char2name.text = "";
@@ -317,7 +328,7 @@ else if (primeInt == 187){
        else if (primeInt == 200){
 				ArtChar3.SetActive(true);
 				ArtChar1.SetActive(false);
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "Are you deaf? Aren't you going to answer my question?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -329,7 +340,7 @@ else if (primeInt == 187){
                 Char2speech.text = "Sorry! You just surprised me.";
 	   }
 	   else if (primeInt == 202){
-                Char1name.text = "Reyes";
+                Char1name.text = "???";
                 Char1speech.text = "Tsk. What a waste of time school is. Espcially for someone like me.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -343,6 +354,9 @@ else if (primeInt == 187){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
+				ArtChar1.SetActive(true);
+                ArtBG2.SetActive(false);
+				ArtBG1.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
@@ -354,6 +368,9 @@ else if (primeInt == 187){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+			ArtChar1.SetActive(true);
+                ArtBG2.SetActive(false);
+				ArtBG1.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;

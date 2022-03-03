@@ -286,7 +286,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 369283683}
-        m_TargetAssemblyTypeName: Scene5ADialogue, Assembly-CSharp
+        m_TargetAssemblyTypeName: Scene5BDialogue, Assembly-CSharp
         m_MethodName: Choice1cFunct
         m_Mode: 1
         m_Arguments:
@@ -577,7 +577,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 369283683}
-        m_TargetAssemblyTypeName: Scene5ADialogue, Assembly-CSharp
+        m_TargetAssemblyTypeName: Scene5BDialogue, Assembly-CSharp
         m_MethodName: Choice1dFunct
         m_Mode: 1
         m_Arguments:
@@ -754,7 +754,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 369283678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c96763f4fc635cb4892e77f0cc13d602, type: 3}
+  m_Script: {fileID: 11500000, guid: 51598396e5c67054cab43093710eb2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
@@ -1060,7 +1060,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 369283683}
-        m_TargetAssemblyTypeName: Scene5ADialogue, Assembly-CSharp
+        m_TargetAssemblyTypeName: Scene5BDialogue, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
         m_Arguments:
@@ -1881,7 +1881,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 369283683}
-        m_TargetAssemblyTypeName: Scene5ADialogue, Assembly-CSharp
+        m_TargetAssemblyTypeName: Scene5BDialogue, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
         m_Arguments:
@@ -2074,7 +2074,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 424625a86f77a2b4783f662209c87816, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e62340f93a4f0d4290b685b9c64e5de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2554,7 +2554,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 369283683}
-        m_TargetAssemblyTypeName: Scene5ADialogue, Assembly-CSharp
+        m_TargetAssemblyTypeName: Scene5BDialogue, Assembly-CSharp
         m_MethodName: Choice1eFunct
         m_Mode: 1
         m_Arguments:
@@ -2845,7 +2845,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 369283683}
-        m_TargetAssemblyTypeName: Scene5ADialogue, Assembly-CSharp
+        m_TargetAssemblyTypeName: Scene5BDialogue, Assembly-CSharp
         m_MethodName: Choice1bFunct
         m_Mode: 1
         m_Arguments:
@@ -3057,7 +3057,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 369283683}
-        m_TargetAssemblyTypeName: Scene5ADialogue, Assembly-CSharp
+        m_TargetAssemblyTypeName: Scene5BDialogue, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
         m_Arguments:
@@ -3238,7 +3238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 05b191c60f0621d4e8314f4a7b207ead, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34f2e3daf38417848baf376c58a84d28, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3417,7 +3417,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 369283683}
-        m_TargetAssemblyTypeName: Scene5ADialogue, Assembly-CSharp
+        m_TargetAssemblyTypeName: Scene5BDialogue, Assembly-CSharp
         m_MethodName: Choice1fFunct
         m_Mode: 1
         m_Arguments:
@@ -3674,7 +3674,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 146e5897b7b51474cb66076fc72c0d28, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d1b581ae9a82b0c49aadde0170902342, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
