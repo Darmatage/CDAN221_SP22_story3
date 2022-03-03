@@ -115,7 +115,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
-                Char2speech.text = "Gosh It’s been so long, Luka. I haven’t seen you since the big move.";
+                Char2speech.text = "Gosh. It’s been so long, Luka. I haven’t seen you since the big move.";
 		}
 		else if (primeInt == 202){
                 Char1name.text = "Luka";
@@ -166,8 +166,6 @@ else if (primeInt == 209){
                 Char2speech.text = "You always were funny Luka, what have you been up to these days";
 }
 		else if (primeInt == 210){
-				ArtChar2.SetActive(false);
-				ArtChar3.SetActive(true);
                 Char1name.text = "Luka";
                 Char1speech.text = "Thinking about you, silly! Ever since you left things just haven’t been the same…";
                 Char2name.text = "";
@@ -180,6 +178,8 @@ else if (primeInt == 209){
                 Char2speech.text = "What do you mean? How so?";
 }
 		else if (primeInt == 212){
+				ArtChar2.SetActive(false);
+				ArtChar3.SetActive(true);
                 Char1name.text = "Luka";
                 Char1speech.text = "The day you left really hit me. You know, you were the only one I had.";
                 Char2name.text = "";
