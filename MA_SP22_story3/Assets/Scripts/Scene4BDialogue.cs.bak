@@ -214,8 +214,6 @@ public void talking(){         // main story function. Players hit next to progr
 				Char2speech.text = "...okay...?";
 		}
 		else if (primeInt == 307){
-				ArtCharB2.SetActive(true);
-				ArtChar1.SetActive(false);
 				Char1name.text = "Rei";
                 Char1speech.text = "Let us be off. There is much to be done.";
                 Char2name.text = "";

@@ -1260,6 +1260,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 369283682}
     m_Modifications:
     - target: {fileID: 3224561377830846368, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224561377830846368, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -1384,7 +1388,15 @@ PrefabInstance:
       value: RestartGame
       objectReference: {fileID: 0}
     - target: {fileID: 3224561379120916278, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224561379120916278, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224561379120916278, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
