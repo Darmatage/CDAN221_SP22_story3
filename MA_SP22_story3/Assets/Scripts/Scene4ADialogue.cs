@@ -205,7 +205,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char2speech.text = "...";
 		}
 		else if (primeInt == 307){
-				ArtCharB1.SetActive(true);
+				ArtCharB2.SetActive(true);
 				ArtChar1.SetActive(false);
 				Char1name.text = "Mrs. Kane";
                 Char1speech.text = "That's what I thought. Detention service after school.";
@@ -213,7 +213,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char2speech.text = "";
 		}
 		else if (primeInt == 308){
-				ArtCharB1.SetActive(false);
+				ArtCharB2.SetActive(false);
 				ArtChar3.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";

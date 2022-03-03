@@ -685,9 +685,9 @@ MonoBehaviour:
   ArtChar1: {fileID: 1262268148}
   ArtChar2: {fileID: 2140473427}
   ArtChar3: {fileID: 1886576764}
-  ArtCharB1: {fileID: 0}
-  ArtCharB2: {fileID: 0}
-  ArtCharB3: {fileID: 0}
+  ArtCharB1: {fileID: 1837148647}
+  ArtCharB2: {fileID: 1581985674}
+  ArtCharB3: {fileID: 2137017662}
   ArtBG1: {fileID: 375370307}
   ArtBG2: {fileID: 1778851476}
   Choice1a: {fileID: 563317292}
