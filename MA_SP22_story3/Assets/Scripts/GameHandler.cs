@@ -12,7 +12,10 @@ public class GameHandler : MonoBehaviour{
         //public GameObject textGameObject;
 
         //void Start () { UpdateScore (); }
-
+		
+		public static bool hadArgument = false;
+		public static bool haveDate = false;
+		
        public static bool GameisPaused = false;
         public GameObject pauseMenuUI;
         public AudioMixer mixer;
@@ -31,6 +34,10 @@ public class GameHandler : MonoBehaviour{
         void Start (){
                 pauseMenuUI.SetActive(false);
 				playerStat = 0;
+				
+			UpdateArgument(hadArgument);
+			UpdateDate(haveDate);
+				
         }
 
         void Update (){
@@ -105,4 +112,17 @@ public class GameHandler : MonoBehaviour{
       public string GetName(){
             return playerName;
       }
+	  
+	  public void UpdateDate(bool dateBool){
+		  haveDate = dateBool;
+	  }
+	  public void UpdateArgument(bool argumentBool){
+		  hadArgument = argumentBool;
+	  }
+	  public bool IsArugment(){
+		  return hadArgument;
+	  }
+	  public bool IsDate(){
+		  return hadArgument;
+	  }
 }

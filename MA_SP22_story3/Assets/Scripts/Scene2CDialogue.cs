@@ -18,6 +18,7 @@ public class Scene2CDialogue : MonoBehaviour {
 		public GameObject ArtChar2;
 		public GameObject ArtChar3;
         public GameObject ArtBG1;
+		public GameObject ArtBG2;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
@@ -36,7 +37,8 @@ void Start(){         // initial visibility settings
         ArtChar1.SetActive(false);
 		ArtChar2.SetActive(false);
 		ArtChar3.SetActive(false);
-        ArtBG1.SetActive(true);
+        ArtBG1.SetActive(false);
+		ArtBG2.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
@@ -66,6 +68,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "You decide to head inside. Suddenly someone barges into the classroom and locks eyes with you.";
         }
        else if (primeInt ==3){
+		   ArtBG1.SetActive(false);
+		   ArtBG2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -73,7 +77,6 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-				ArtChar2.SetActive(true);
                 Char1name.text = "???";
                 Char1speech.text = "When I saw your name, I just knew it had to be fate! I can’t believe it’s been so long since I last saw you!";
                 Char2name.text = "";
@@ -92,6 +95,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
+				ArtChar2.SetActive(true);
                 Char1name.text = "Luka";
                 Char1speech.text = "Aw shucks, it couldn't have been that long for you to forget! It's me! Luka!";
                 Char2name.text = "";
@@ -106,6 +110,7 @@ public void talking(){         // main story function. Players hit next to progr
 		}
 
        else if (primeInt == 200){
+				ArtChar2.SetActive(true);
                 Char1name.text = "Luka";
                 Char1speech.text = "Yaaaaaay! I just knew you'd remember me, you just had to!";
                 Char2name.text = "";
@@ -235,6 +240,8 @@ else if (primeInt == 209){
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
+				ArtBG1.SetActive(true);
+				ArtBG2.SetActive(false);
         }
         public void Choice1bFunct(){
                 Char1name.text = "";
@@ -246,6 +253,8 @@ else if (primeInt == 209){
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
+				ArtBG1.SetActive(true);
+				ArtBG2.SetActive(false);
         }
 
         public void SceneChange1(){

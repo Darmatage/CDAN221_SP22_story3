@@ -202,7 +202,7 @@ public void talking(){         // main story function. Players hit next to progr
 		 }
 
 		else if (primeInt == 300){
-			ArtCharB3.SetActive(false);
+			ArtCharB1.SetActive(false);
 			ArtCharB2.SetActive(true);
 			Char1name.text = "Lila";
                 Char1speech.text = "Boring without you! I wish you didn't haven to transfer out. Miss all the chaos we used to cause together.";

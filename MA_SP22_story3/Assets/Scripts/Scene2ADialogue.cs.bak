@@ -39,8 +39,8 @@ void Start(){         // initial visibility settings
         ArtChar1.SetActive(false);
 		ArtChar2.SetActive(false);
 		ArtChar3.SetActive(false);
-        ArtBG1.SetActive(true);
-		ArtBG2.SetActive(false);
+        ArtBG1.SetActive(false);
+		ArtBG2.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
 		Choice1c.SetActive(false);
@@ -75,9 +75,6 @@ public void talking(){         // main story function. Players hit next to progr
 		}
         else if (primeInt == 3){
 			DialogueDisplay.SetActive(true);
-               ArtChar1.SetActive(true);
-                ArtBG2.SetActive(false);
-				ArtBG1.SetActive(true);
                 Char1name.text = "???";
                 Char1speech.text = "Huh, so you decided to skip too? It’s a waste of time anyway so you made a good decision I guess.";
                 Char2name.text = "";
@@ -95,6 +92,7 @@ public void talking(){         // main story function. Players hit next to progr
         
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
+				ArtChar1.SetActive(true);
                 Char1name.text = "???";
                 Char1speech.text = "What’s the point in going when there’s nothing lined up for me?";
                 Char2name.text = "";
@@ -357,6 +355,8 @@ else if (primeInt == 187){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
+                ArtBG2.SetActive(false);
+				ArtBG1.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
@@ -368,6 +368,8 @@ else if (primeInt == 187){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+                ArtBG2.SetActive(false);
+				ArtBG1.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;

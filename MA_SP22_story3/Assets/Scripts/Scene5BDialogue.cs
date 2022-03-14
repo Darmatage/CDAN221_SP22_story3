@@ -31,6 +31,7 @@ public class Scene5BDialogue : MonoBehaviour {
 		//public GameObject Choice1g;
 		//public GameObject Choice1h;
         public GameObject NextScene1Button;
+		public GameObject NextScene2Button;
         public GameObject nextButton;
 		public string playerName;
 		//public GameObject gameHandler;
@@ -57,6 +58,7 @@ void Start(){         // initial visibility settings
 		//Choice1g.SetActive(false);
 		//Choice1h.SetActive(false);
         NextScene1Button.SetActive(false);
+		NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
 		string pNameTemp = gameHandler.GetName();
 		playerName = pNameTemp.ToUpper();
@@ -201,7 +203,7 @@ public void talking(){         // main story function. Players hit next to progr
 		 }
 
 		else if (primeInt == 300){
-			ArtCharB3.SetActive(false);
+			ArtCharB1.SetActive(false);
 			ArtCharB2.SetActive(true);
 			Char1name.text = "Lila";
                 Char1speech.text = "Boring without you! I wish you didn't haven to transfer out. Miss all the chaos we used to cause together.";
@@ -305,6 +307,9 @@ public void talking(){         // main story function. Players hit next to progr
 					Char1speech.text = "";
 					Char2name.text = "Rei";
 					Char2speech.text = "Well, we mustn't dally. You've far exceeded the time I so graciously gave you.";
+				if (gameHandler.CheckPlayerStat()<=0){
+					primeInt = 700;
+			}
 				}
 		 else if (primeInt == 503){
 				nextButton.SetActive(false);
@@ -342,12 +347,20 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "Rei";
                 Char2speech.text = "Now, let us be off.";
+				if (gameHandler.CheckPlayerStat()<=0){
+					primeInt = 700;
+			}
 			}
 		 		 else if (primeInt == 604){
 			nextButton.SetActive(false);
                 allowSpace = false;
 				NextScene1Button.SetActive(true);
 		 }
+		 else if (primeInt == 701){
+				nextButton.SetActive(false);
+                allowSpace = false;
+				NextScene2Button.SetActive(true);
+				}
 		 
 		 
 		//if (gameHandler.CheckPlayerStat() <= 1){
@@ -363,6 +376,7 @@ public void talking(){         // main story function. Players hit next to progr
 
 		
 }
+
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
                 Char1name.text = "";
@@ -440,4 +454,8 @@ public void talking(){         // main story function. Players hit next to progr
         public void SceneChange1(){
                SceneManager.LoadScene("Scene6B");
         }
+		
+		public void SceneChange2(){
+				SceneManager.LoadScene("Scene6BBad");
+		}
 }
