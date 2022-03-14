@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class Scene4CDialogue : MonoBehaviour {
-        public int primeInt = 1;         // This integer drives game progress!
+		public int primeInt = 1;         // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
         public Text Char2name;
@@ -182,14 +182,14 @@ public void talking(){         // main story function. Players hit next to progr
 			//	Char2speech.text = "You feel eyes burning a hole in the back of your head as you try and focus on the lesson.";
 		//}
 		 
-		 else if (primeInt == 301){
+		 else if (primeInt == 300){
 				ArtChar2.SetActive(false);
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
 				Char2speech.text = "After class, Luka gives you a grin as they pull you into a hug.";
 }
-		else if (primeInt == 302){
+		else if (primeInt == 301){
 				ArtChar2.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
@@ -197,13 +197,13 @@ public void talking(){         // main story function. Players hit next to progr
 				Char2speech.text = "Look at you! It looks so pretty! I hope you like it! I spent all night on it!";
 		}
 		
-		else if (primeInt == 303){
+		else if (primeInt == 302){
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
 				Char2speech.text = "Thanks a bunch. It looks really good! Reminds me of the one you made for me years ago.";
 		}
-		else if (primeInt == 304){
+		else if (primeInt == 303){
 				ArtChar1.SetActive(false);
 				ArtChar2.SetActive(true);
 				Char1name.text = "Luka";
@@ -211,13 +211,13 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
 				Char2speech.text = "";
 		}
-		else if (primeInt == 305){
+		else if (primeInt == 304){
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
 				Char2speech.text = "Yeah! Of course I kept it.";
 		}
-		else if (primeInt == 306){
+		else if (primeInt == 305){
 				ArtChar2.SetActive(false);
 				ArtChar1.SetActive(true);
 				Char1name.text = "Luka";
@@ -225,13 +225,13 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
 				Char2speech.text = "";
 		}
-		else if (primeInt == 307){
+		else if (primeInt == 306){
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
 				Char2speech.text = "Sure sure.";
 		}
-		else if (primeInt == 308){
+		else if (primeInt == 307){
 			ArtChar2.SetActive(true);
 				ArtChar1.SetActive(false);
 				Char1name.text = "Luka";
@@ -239,14 +239,14 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
 				Char2speech.text = "";
 		}
-		else if (primeInt == 309){
+		else if (primeInt == 308){
 				ArtChar2.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "Luka continues to smile before taking your hand as they lead you out the classroom.";
                 Char2name.text = "";
 				Char2speech.text = "";
 		}
-		else if (primeInt == 310) {
+		else if (primeInt == 309) {
 			nextButton.SetActive(false);
                 allowSpace = false;
 				NextScene1Button.SetActive(true);

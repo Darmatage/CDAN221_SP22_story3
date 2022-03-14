@@ -149,7 +149,7 @@ public void talking(){         // main story function. Players hit next to progr
 					 ArtChar3.SetActive(false);
 					 ArtCharB2.SetActive(true);
                 Char1name.text = "Lila";
-                Char1speech.text = "So awesomee that you two are finally reunited. It's great to see you so happy, bestie.";
+                Char1speech.text = "So awesome that you two are finally reunited. It's great to see you so happy, bestie.";
                 Char2name.text = "";
                 Char2speech.text = "";
 		 }

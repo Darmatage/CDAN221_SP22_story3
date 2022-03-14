@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class Scene5BDialogue : MonoBehaviour {
-        public int primeInt = 1;         // This integer drives game progress!
+        public int primeInt = 1;
         public Text Char1name;
         public Text Char1speech;
         public Text Char2name;
@@ -161,7 +161,6 @@ public void talking(){         // main story function. Players hit next to progr
                 Choice1b.SetActive(true); // function Choice1bFunct()
 		 }
 		
-// ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
 			ArtChar3.SetActive(true);
                 Char1name.text = "Rei";

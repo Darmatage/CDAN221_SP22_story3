@@ -9,7 +9,7 @@ using UnityEngine.Audio;
 public class GameHandler : MonoBehaviour{
 		public static string playerName = "YOU";
         public static int playerStat;
-        public GameObject textGameObject;
+        //public GameObject textGameObject;
 
         //void Start () { UpdateScore (); }
 
@@ -30,6 +30,7 @@ public class GameHandler : MonoBehaviour{
 
         void Start (){
                 pauseMenuUI.SetActive(false);
+				playerStat = 0;
         }
 
         void Update (){
@@ -85,6 +86,7 @@ public class GameHandler : MonoBehaviour{
 		
 		
         public void RestartGame(){
+				playerStat = 0;
 				Time.timeScale = 1f;
                 SceneManager.LoadScene("MainMenu");
         }
