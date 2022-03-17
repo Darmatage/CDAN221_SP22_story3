@@ -163,6 +163,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "The air gets tense as the three of you stand in silence.";
 		 }
 		 		 else if (primeInt == 14){
+				allowSpace = false;
+				nextButton.SetActive(false);
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
 		 }
@@ -186,6 +188,8 @@ public void talking(){         // main story function. Players hit next to progr
 				primeInt = 100;
 		 }
 		else if (primeInt == 101){
+				allowSpace = false;
+				nextButton.SetActive(false);
 			Choice1c.SetActive(true); // function Choice1aFunct()
             Choice1d.SetActive(true); // function Choice1bFunct()
 		}
@@ -262,6 +266,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
 		 }
 		 		 else if (primeInt == 309){
+				allowSpace = false;
+				nextButton.SetActive(false);
                 Choice1e.SetActive(true); // function Choice1aFunct()
 				Choice1f.SetActive(true); // function Choice1bFunct()
 		 }

@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene5B.unity
     guid: 4d47607a6d2d3c645bd1a47a946f6709
+  - enabled: 1
+    path: Assets/Scenes/End_LoseRei.unity
+    guid: 653330e2746dfa34eb7ee84387bea002
   m_configObjects: {}

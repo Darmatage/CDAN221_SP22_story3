@@ -300,16 +300,22 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
-                Char2speech.text = "Rei grabs your wrist once more as they drag you inside the store.";
+                Char2speech.text = "Rei stares off into the distance. They turn their head towards you.";
 		 }
 				else if (primeInt == 502){
 					Char1name.text = "";
 					Char1speech.text = "";
 					Char2name.text = "Rei";
-					Char2speech.text = "Well, we mustn't dally. You've far exceeded the time I so graciously gave you.";
-				if (gameHandler.CheckPlayerStat()<=0){
-					primeInt = 700;
+					Char2speech.text = "It appears I have some other business to take care of. I bid you farewell.";
 			}
+				 else if (primeInt == 503){
+					 Char1name.text = "";
+					 Char1speech.text = "";
+					 Char2name.text = "";
+					 Char2speech.text = "Rei doesn't spare you another glance as they leave you behind.";
+					 if (gameHandler.CheckPlayerStat()<=0){
+					primeInt = 700;
+				 }
 				}
 		 else if (primeInt == 503){
 				nextButton.SetActive(false);

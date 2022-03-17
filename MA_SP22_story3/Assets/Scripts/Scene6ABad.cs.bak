@@ -423,7 +423,7 @@ public void talking(){         // main story function. Players hit next to progr
 			Choice1d.SetActive(false);
 			allowSpace = true;
 			nextButton.SetActive(true);
-			gameHandler.UpdateArgument(true);
+			gameHandler.UpdateArguemtn(true);
 		}
 		public void Choice1dFunct(){
 			Char1name.text = "";
