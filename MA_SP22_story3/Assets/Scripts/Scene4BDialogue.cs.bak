@@ -278,6 +278,6 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene5b");
+               SceneManager.LoadScene("Scene5c");
         }
 }
