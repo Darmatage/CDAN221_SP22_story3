@@ -755,30 +755,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 369283678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bbcc709ec4faa34e848276a6d66645c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b7d0fa9b0a9b3f48b36f10cdb346ed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  primeInt: 1
-  Char1name: {fileID: 1049200434}
-  Char1speech: {fileID: 939195875}
-  Char2name: {fileID: 1052966816}
-  Char2speech: {fileID: 848757659}
-  DialogueDisplay: {fileID: 1019079509}
-  ArtChar1: {fileID: 1262268148}
-  ArtChar2: {fileID: 2140473427}
-  ArtChar3: {fileID: 1886576764}
-  ArtChar4: {fileID: 1571179135}
-  ArtBG1: {fileID: 375370307}
-  Choice1a: {fileID: 563317292}
-  Choice1b: {fileID: 1796776798}
-  Choice1c: {fileID: 111487701}
-  Choice1d: {fileID: 200669945}
-  Choice1e: {fileID: 1593649869}
-  Choice1f: {fileID: 2011833387}
-  NextScene1Button: {fileID: 1068576761}
-  nextButton: {fileID: 1808022809}
-  playerName: 
-  gameHandler: {fileID: 2069293117}
 --- !u!1 &375370307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,7 +1870,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 369283683}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene6ADialogue, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
@@ -3142,7 +3121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 369283683}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene6ADialogue, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
