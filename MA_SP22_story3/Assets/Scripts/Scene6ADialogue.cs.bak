@@ -83,13 +83,142 @@ public void talking(){         // main story function. Players hit next to progr
 			Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
-            Char2speech.text = "The next day...";
+            Char2speech.text = "Some time later...";
 		}
 		else if (primeInt == 3){
+			ArtChar1.SetActive(true);
 			Char1name.text = "";
 			Char2name.text = playerName;
 			Char1speech.text = "";
-			Char2speech.text = "";
+			Char2speech.text = "So...";
+		}
+		else if (primeInt == 4){
+			Char1name.text = "Reyes";
+            Char1speech.text = "What?";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+		else if (primeInt == 5){
+				Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Any plans for Homecoming?";
+		}
+		else if (primeInt == 6){
+				Char1name.text = "Reyes";
+                Char1speech.text = "You can't be serious. Why would I bother with something like that?";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 7){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "What? I just thought it'd be fun or something.";
+		}
+		else if (primeInt == 8){
+			ArtChar1.SetActive(false);
+			ArtChar3.SetActive(true);
+				Char1name.text = "Reyes";
+                Char1speech.text = "Fun for who exactly?";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 9){
+				Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "I guess if you really don't want to go, I could always ask someone else...";
+		}
+		else if(primeInt == 10){
+				Char1name.text = "Reyes";
+                Char1speech.text = "...I never said no...";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 11){
+				Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "I don't know... You seemed pretty against it.";
+		}
+		else if (primeInt == 12){
+			Char1name.text = "Reyes";
+                Char1speech.text = "...fine.";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 13){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "I'm sorry, what was that?";
+		}
+		else if (primeInt == 14){
+			Char1name.text = "Reyes";
+                Char1speech.text = "I said I'll go. With you. To Homecoming.";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 15){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Now that wasn't so hard to accept, was it?";
+		}
+		else if (primeInt == 16){
+			ArtChar1.SetActive(false);
+			ArtChar2.SetActive(true);
+			Char1name.text = "Reyes";
+                Char1speech.text = "...as long as it keeps you happy, I guess.";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 17){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Sorry, what was that?";
+		}
+		else if (primeInt == 18){
+			ArtChar2.SetActive(false);
+			ArtChar1.SetActive(true);
+			Char1name.text = "Reyes";
+                Char1speech.text = "Nothing. Just be there by, I don't know, half an hour after the event starts.";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 19){
+			Char1name.text = "Reyes";
+                Char1speech.text = "Wouldn't want to be caught dead at the event on time.";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 20){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Haha, sure. Whatever you say.";
+		}
+		else if (primeInt == 21){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "See you later then?";
+		}
+		else if (primeInt == 22){
+			Char1name.text = "Reyes";
+                Char1speech.text = "Yeah... See you later.";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 23){
+			allowSpace = false;
+			nextButton.SetActive(false);
+			NextScene1Button.SetActive(true);
 		}
 }
+		public void SceneChange1(){
+			SceneManager.LoadScene("Scene7A");
+		}
 }

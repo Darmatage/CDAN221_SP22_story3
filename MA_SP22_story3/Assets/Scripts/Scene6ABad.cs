@@ -380,6 +380,139 @@ public void talking(){         // main story function. Players hit next to progr
 				Choice1d.SetActive(true);
 		}
 		else if (primeInt == 201){
+				Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Reyes! Wait!";
+		}
+		else if (primeInt == 202){
+				ArtChar4.SetActive(true);
+				Char1name.text = "Reyes";
+                Char1speech.text = "What. Do. You. Want?";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 203){
+				Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Alright, look. I'm sorry.";
+		}
+		else if (primeInt == 204){
+				ArtChar4.SetActive(false);
+				ArtChar1.SetActive(true);
+				Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "I shouldn't have lashed out at you like that. Nor should I have been an ass to you.";
+		}
+		else if (primeInt == 205){
+				Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Things are still new for me. I'm still getting adjusted to everything here and...";
+		}
+		else if (primeInt == 206){
+			Char1name.text = "Reyes";
+                Char1speech.text = "And..?";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 207){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "I freaked out, okay? It's not like me to get all cozy with someone.";
+		}
+		else if (primeInt == 208){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "I usually stuck to myself and don't let others in. Unless they weasel their way through, I just went on with life.";
+		}
+		else if (primeInt == 209){
+			ArtChar3.SetActive(true);
+			ArtChar1.SetActive(false);
+			Char1name.text = "Reyes";
+                Char1speech.text = "So what? You think this will magically make things better between us?";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 210){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Can you just let me finish?";
+		}
+		else if (primeInt == 211){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Can you give me another chance? So I can properly make it up to you?";
+		}
+		else if (primeInt == 212){
+			Char1name.text = "Reyes";
+                Char1speech.text = "Now how do you plan on doing that?";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 213){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Go to Homecoming with me.";
+		}
+		else if (primeInt == 214){
+				ArtChar3.SetActive(false);
+				ArtChar1.SetActive(true);
+			Char1name.text = "Reyes";
+                Char1speech.text = "No.";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 215){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Just one more chance. If it falls through, I'll never bother you again.";
+		}
+		else if (primeInt == 216){
+			Char1name.text = "Reyes";
+                Char1speech.text = "...";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 217){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "...";
+		}
+		else if (primeInt == 218){
+			Char1name.text = "Reyes";
+                Char1speech.text = "Just this one last chance, got it?";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 219){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = playerName;
+                Char2speech.text = "Great! You won't regret it.";
+		}
+		else if (primeInt == 220){
+			Char1name.text = "Reyes";
+                Char1speech.text = "I better not.";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 221){
+			Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "They turn away and continue their exit.";
+		}
+		else if (primeInt == 222){
 			NextScene1Button.SetActive(true);
 		}
 		else if (primeInt == 251){
@@ -423,7 +556,6 @@ public void talking(){         // main story function. Players hit next to progr
 			Choice1d.SetActive(false);
 			allowSpace = true;
 			nextButton.SetActive(true);
-			gameHandler.UpdateArgument(true);
 		}
 		public void Choice1dFunct(){
 			Char1name.text = "";
@@ -437,7 +569,7 @@ public void talking(){         // main story function. Players hit next to progr
 			nextButton.SetActive(true);
 		}
 		public void SceneChange1(){
-			SceneManager.LoadScene("Scene6ARetribution");
+			SceneManager.LoadScene("Scene7A");
 		}
 		public void SceneChange2(){
 			SceneManager.LoadScene("End_LoseReyes");
