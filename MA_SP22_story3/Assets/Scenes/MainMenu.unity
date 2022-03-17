@@ -866,6 +866,30 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3224561378190030828, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1338601849}
+    - target: {fileID: 3224561378190030828, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224561378316221165, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1338601849}
+    - target: {fileID: 3224561378316221165, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224561378453296133, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1338601849}
+    - target: {fileID: 3224561378453296133, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
     - target: {fileID: 3224561378805883148, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -953,6 +977,14 @@ PrefabInstance:
     - target: {fileID: 3224561378805883187, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224561379112103082, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1338601849}
+    - target: {fileID: 3224561379112103082, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
       objectReference: {fileID: 0}
     - target: {fileID: 3224561379120916278, guid: 080814c2e5500044c9a6f2a2f51afe5f, type: 3}
       propertyPath: m_AnchorMax.x
