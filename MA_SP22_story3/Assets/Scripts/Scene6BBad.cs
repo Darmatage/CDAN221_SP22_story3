@@ -624,6 +624,6 @@ public void talking(){
 			SceneManager.LoadScene("End_LoseRei");
 		}
 		public void SceneChange2(){
-			SceneManager.LoadScene("Scene6B");
+			SceneManager.LoadScene("Scene7B");
 		}
 }
