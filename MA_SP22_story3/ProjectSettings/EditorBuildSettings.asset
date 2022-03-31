@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End_LoseLuka.unity
     guid: 52c767c5eb3bc2f4abd0674bcd7dafb3
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: ec522b6d6ccb9d44586ec0f245fc592b
@@ -71,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene6CBad.unity
     guid: 102d7f81458019347be63a7f2e2c08f0
+  - enabled: 1
+    path: Assets/Scenes/Scene7A.unity
+    guid: 5f61fb6eab384bb4d86df7bdcdffdf0e
   m_configObjects: {}
