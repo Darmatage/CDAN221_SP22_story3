@@ -483,8 +483,96 @@ public void talking(){
 			NextScene1Button.SetActive(true);
 		}
 		else if (primeInt == 401){
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = playerName;
+			Char2speech.text = "Rei! Wait!";
+		}
+		else if (primeInt == 402){
+			ArtChar4.SetActive(true);
+			Char1name.text = "Rei";
+			Char1speech.text = "You must be daft or an entirely new breed of dull. What about these instructions do you not understand?";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 403){
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = playerName;
+			Char2speech.text = "Come to Homecoming with me. Please.";
+		}
+		else if (primeInt == 404){
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = playerName;
+			Char2speech.text = "I know I don't deserve another chance but...";
+		}
+		else if (primeInt == 405){
+			ArtChar4.SetActive(false);
+			ArtChar3.SetActive(true);
+			Char1name.text = "Rei";
+			Char1speech.text = "But?";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 406){
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = playerName;
+			Char2speech.text = "I'll prove it. I'll prove that I don't have to be perfect to be with you.";
+		}
+		else if (primeInt == 407){
+			Char1name.text = "Rei";
+			Char1speech.text = "And if you manage to fail?";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 408){
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = playerName;
+			Char2speech.text = "Then you won't have to deal with me ever again. I'll disappear from your sights.";
+		}
+		else if (primeInt == 409){
+			Char1name.text = "Rei";
+			Char1speech.text = "Yes. 'Disappear'. Alright, I'll humor you this once.";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 410){
+			ArtChar3.SetActive(false);
+			ArtChar1.SetActive(true);
+			Char1name.text = "Rei";
+			Char1speech.text = "But if I find that I am at all displeased, you will face the consequences.";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 411){
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = playerName;
+			Char2speech.text = "Okay. I'll see you Friday then.";
+		}
+		else if (primeInt == 412){
+			Char1name.text = "Rei";
+			Char1speech.text = "Do show up on time.";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 413){
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "They continue their way towards their seat.";
+		}
+		else if (primeInt == 414){
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = playerName;
+			Char2speech.text = "Only one way to fix things now...";
+		}
+		else if (primeInt == 415){
 			NextScene2Button.SetActive(true);
-			gameHandler.UpdateArgument(true);
 		}
 }
 
