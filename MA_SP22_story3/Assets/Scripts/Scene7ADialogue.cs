@@ -94,6 +94,14 @@ public void talking(){         // main story function. Players hit next to progr
 			Char3speech.text = "How'd I even get talked into doing something like this...";
 		}
 		else if (primeInt == 4){
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "It was the night of Homecoming and Reyes was side-eyeing anyone that got too close.";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 5){
 			Choice1a.SetActive(true);
 			Choice1b.SetActive(true);
 			allowSpace = false;
