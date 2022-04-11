@@ -376,7 +376,6 @@ public void talking(){         // main story function. Players hit next to progr
                 nextButton.SetActive(true);
                 allowSpace = true;
 				gameHandler.UpdatePlayerStat(1);
-				gameHandler.UpdateDate(true);
         }
 		public void Choice1dFunct(){
                 Char1name.text = "";

@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: It's not that bad...
+  m_Text: Pat their back
 --- !u!222 &12139925
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -285,9 +285,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene7ADialogue, Assembly-CSharp
-        m_MethodName: Choice1cFunt
+      - m_Target: {fileID: 369283683}
+        m_TargetAssemblyTypeName: Scene7CDialogue, Assembly-CSharp
+        m_MethodName: Choice1cFunct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -576,8 +576,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene7ADialogue, Assembly-CSharp
+      - m_Target: {fileID: 369283683}
+        m_TargetAssemblyTypeName: Scene7CDialogue, Assembly-CSharp
         m_MethodName: Choice1dFunct
         m_Mode: 1
         m_Arguments:
@@ -638,6 +638,7 @@ GameObject:
   - component: {fileID: 369283681}
   - component: {fileID: 369283680}
   - component: {fileID: 369283679}
+  - component: {fileID: 369283683}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -745,6 +746,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &369283683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369283678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a32fb8ae0f9084f8afbe2f5be90c2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primeInt: 1
+  Char1name: {fileID: 1049200434}
+  Char1speech: {fileID: 939195875}
+  Char2name: {fileID: 1052966816}
+  Char2speech: {fileID: 848757659}
+  DialogueDisplay: {fileID: 1019079509}
+  ArtChar1: {fileID: 1262268148}
+  ArtChar2: {fileID: 2140473427}
+  ArtChar3: {fileID: 1886576764}
+  ArtBG1: {fileID: 375370307}
+  Choice1a: {fileID: 563317292}
+  Choice1b: {fileID: 1796776798}
+  Choice1c: {fileID: 111487701}
+  Choice1d: {fileID: 200669945}
+  NextScene1Button: {fileID: 1068576761}
+  nextButton: {fileID: 1808022809}
+  playerName: 
+  gameHandler: {fileID: 2069293117}
 --- !u!1 &375370307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,8 +1055,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene7ADialogue, Assembly-CSharp
+      - m_Target: {fileID: 369283683}
+        m_TargetAssemblyTypeName: Scene7CDialogue, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
         m_Arguments:
@@ -1170,7 +1201,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &766188765
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1686,7 +1717,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Say it bluntly
+  m_Text: Question
 --- !u!222 &1037197294
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1936,8 +1967,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene7ADialogue, Assembly-CSharp
+      - m_Target: {fileID: 369283683}
+        m_TargetAssemblyTypeName: Scene7CDialogue, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
         m_Arguments:
@@ -2298,7 +2329,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tease
+  m_Text: Joke
 --- !u!222 &1443487389
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2443,7 +2474,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: My parents forced me
+  m_Text: Wipe away their tears
 --- !u!222 &1519781779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2620,7 +2651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1593649870
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2752,7 +2783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1598933647
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3055,8 +3086,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene7ADialogue, Assembly-CSharp
+      - m_Target: {fileID: 369283683}
+        m_TargetAssemblyTypeName: Scene7CDialogue, Assembly-CSharp
         m_MethodName: Choice1bFunct
         m_Mode: 1
         m_Arguments:
@@ -3267,8 +3298,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene7ADialogue, Assembly-CSharp
+      - m_Target: {fileID: 369283683}
+        m_TargetAssemblyTypeName: Scene7CDialogue, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
         m_Arguments:
@@ -3563,7 +3594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2011833388
 RectTransform:
   m_ObjectHideFlags: 0

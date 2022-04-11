@@ -30,6 +30,7 @@ public class Scene2CDialogue : MonoBehaviour {
 		public string playerName;
 		public GameHandler gameHandler;
 
+
 void Start(){         // initial visibility settings
 		string pNameTemp = gameHandler.GetName();
 		playerName = pNameTemp.ToUpper();
@@ -226,6 +227,7 @@ else if (primeInt == 209){
 				nextButton.SetActive(false);
                 allowSpace = false;
 				NextScene1Button.SetActive(true);
+				
 		}
      }
 

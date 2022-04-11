@@ -31,6 +31,9 @@ public class Scene2ADialogue : MonoBehaviour {
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
+		GameHandler.metRei = false;
+		GameHandler.metReyes = false;
+		GameHandler.metLuka = false;
 
 void Start(){         // initial visibility settings
 		string pNameTemp = gameHandler.GetName();
@@ -328,7 +331,6 @@ else if (primeInt == 187){
 
        else if (primeInt == 200){
 				ArtChar3.SetActive(true);
-				ArtChar1.SetActive(false);
                 Char1name.text = "???";
                 Char1speech.text = "Are you deaf? Aren't you going to answer my question?";
                 Char2name.text = "";

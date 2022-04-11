@@ -31,6 +31,9 @@ public class Scene2BDialogue : MonoBehaviour {
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
+		GameHandler.metRei = false;
+		GameHandler.metReyes = false;
+		GameHandler.metLuka = false;
 
 void Start(){         // initial visibility settings
 		string pNameTemp = gameHandler.GetName();
@@ -185,15 +188,13 @@ public void talking(){         // main story function. Players hit next to progr
 }
 		else if (primeInt == 116){
 				ArtBG2.SetActive(false);
-				ArtChar2.SetActive(true);
+				ArtChar1.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = playerName;
                 Char2speech.text = "I… I actually do, I don’t know how I can ever go back to eating donuts again after this.";
 }
 		else if (primeInt == 117){
-				ArtChar1.SetActive(true);
-				ArtChar2.SetActive(false);
                 Char1name.text = "Rei";
                 Char1speech.text = "My name is Rei, and today is the last time you live like some casual barbarian. Listen to exactly what I say and do exactly what I tell you and you might just be perfect.";
                 Char2name.text = "";
@@ -215,6 +216,7 @@ public void talking(){         // main story function. Players hit next to progr
                 nextButton.SetActive(false);
                 allowSpace = false;
 				NextScene1Button.SetActive(true);
+				
 }
 }
 

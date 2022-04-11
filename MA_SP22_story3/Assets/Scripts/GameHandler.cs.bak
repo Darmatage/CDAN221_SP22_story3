@@ -13,8 +13,9 @@ public class GameHandler : MonoBehaviour{
 
         //void Start () { UpdateScore (); }
 		
-		public static bool gotThing1 = false;
-		public static bool gotThing2 = false;
+		public static bool metReyes = true;
+		public static bool metRei = true;
+		public static bool metLuka = true;
 		
        public static bool GameisPaused = false;
         public GameObject pauseMenuUI;
@@ -34,10 +35,6 @@ public class GameHandler : MonoBehaviour{
         void Start (){
                 pauseMenuUI.SetActive(false);
 				playerStat = 0;
-				
-			UpdateThing1(gotThing1);
-			UpdateThing2(gotThing2);
-				
         }
 
         void Update (){
@@ -112,17 +109,4 @@ public class GameHandler : MonoBehaviour{
       public string GetName(){
             return playerName;
       }
-	  
-	  public void UpdateThing1(bool thingBool){
-		  gotThing1 = thingBool;
-	  }
-	  public void UpdateThing2(bool thingBool){
-		  gotThing2 = thingBool;
-	  }
-	  public bool IsThing1(){
-		  return gotThing1;
-	  }
-	  public bool IsThing2(){
-		  return gotThing2;
-	  }
 }

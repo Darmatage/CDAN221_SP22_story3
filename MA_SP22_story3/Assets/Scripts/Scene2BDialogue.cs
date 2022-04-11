@@ -32,6 +32,7 @@ public class Scene2BDialogue : MonoBehaviour {
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
+
 void Start(){         // initial visibility settings
 		string pNameTemp = gameHandler.GetName();
 		playerName = pNameTemp.ToUpper();
@@ -213,6 +214,7 @@ public void talking(){         // main story function. Players hit next to progr
                 nextButton.SetActive(false);
                 allowSpace = false;
 				NextScene1Button.SetActive(true);
+				
 }
 }
 
